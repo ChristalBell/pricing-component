@@ -1,7 +1,7 @@
 body{
     background-image: url(./images/bg-bottom.svg);
     background-size: 75%;
-    color: hsl(232, 13%, 33%);
+    color: hsl(233, 13%, 49%);
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -18,6 +18,10 @@ body{
     display:grid;
     justify-content: center;
  }
+
+.price{
+    color:hsl(232, 13%, 33%); 
+}
 
 .subscription{
     align-items: center; 
@@ -50,7 +54,7 @@ body{
 
 /* background/ blue part of slider */
 .slider {
-    background-color:hsl(237, 63%, 64%);
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     bottom: 0;
     cursor: pointer;
     left: 0;
@@ -92,9 +96,24 @@ body{
   }
 
 .boxes{
+   
     background-color: white;
+    border-radius: .5rem;
     display:flex; 
+    font-size: 12px;
+    font-weight:600;
     flex-direction: row;
-    justify-content: center;
-    
+    justify-content:space-around;
+    padding: 2rem .5rem;   
 }
+
+.button{
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border: none;
+    border-radius: .25rem;
+    color: white;
+    font-size: 10px;
+    font-weight: 600;
+    padding: .5rem 4rem;
+}
+
