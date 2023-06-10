@@ -2,11 +2,10 @@ body{
     background-image: url(./images/bg-bottom.svg);
     background-size: 75%;
     color: hsl(233, 13%, 49%);
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .container{
-    background-color:hsl(240, 78%, 98%);
     background-image: url(./images/bg-top.svg);
     background-size: 10%;
     display:flex;
@@ -14,13 +13,14 @@ body{
     margin: 14rem 4rem;
     padding: 2rem;
 }
- h1{
+ h4{
     display:grid;
     justify-content: center;
  }
 
 .price{
     color:hsl(232, 13%, 33%); 
+    font-size: 700;
 }
 
 .subscription{
@@ -33,7 +33,7 @@ body{
 }
 
 .subscription > p{
-    padding: 1.5rem;
+    padding: 1.75rem;
     
 }
 
@@ -96,24 +96,42 @@ body{
   }
 
 .boxes{
-   
+  
     background-color: white;
     border-radius: .5rem;
     display:flex; 
-    font-size: 12px;
+    font-size: 10px;
     font-weight:600;
     flex-direction: row;
-    justify-content:space-around;
-    padding: 2rem .5rem;   
+    justify-content:space-evenly;
+    padding: 2rem .1rem;   
+    text-align: center;
 }
+
 
 .button{
     background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     border: none;
     border-radius: .25rem;
     color: white;
-    font-size: 10px;
+    font-size: 8px;
     font-weight: 600;
+    letter-spacing: .1rem;
     padding: .5rem 4rem;
 }
 
+.zoom {
+    background-color: white;
+    border-radius: .5rem;
+    height: 200px;
+    margin: 0 auto;
+    padding: 50px;
+    transition: transform .2s; 
+    width: 200px;
+}
+
+  .zoom:hover {
+      background: linear-gradient(to bottom, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+      color: white;
+      transform: scale(1.1);
+  }
