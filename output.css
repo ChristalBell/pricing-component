@@ -1,0 +1,109 @@
+body {
+  background-image: url(./images/bg-bottom.svg);
+  background-size: 75%;
+  color: #6d708d;
+  font-family: "Montserrat", sans-serif; }
+
+.container {
+  background-image: url(./images/bg-top.svg);
+  background-size: 10%;
+  display: flex;
+  flex-direction: column;
+  margin: 14rem 4rem;
+  padding: 2rem; }
+  .container h4 {
+    display: grid;
+    justify-content: center; }
+  .container h1 {
+    font-size: 40px; }
+    .container h1.hidden {
+      display: none; }
+  .container .subscription {
+    align-items: center;
+    color: #b3b5c6;
+    display: flex;
+    font-size: 10px;
+    font-weight: bold;
+    justify-content: center;
+    /* size of blue part of slide */
+    /* hides check box */
+    /* background/ blue part of slider */
+    /* slides */
+    /* the outside of the slider */ }
+    .container .subscription p {
+      padding: 1.75rem; }
+    .container .subscription .switch {
+      display: inline-block;
+      height: 34px;
+      position: relative;
+      width: 60px; }
+    .container .subscription .switch input {
+      height: 0;
+      opacity: 0;
+      width: 0; }
+    .container .subscription .slider {
+      background: linear-gradient(to right, #a3a8f0, #696fdd);
+      bottom: 0;
+      cursor: pointer;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transition: .4s;
+      -webkit-transition: .4s;
+      /* white dot inside of slider */ }
+      .container .subscription .slider:before {
+        background-color: white;
+        bottom: 4px;
+        content: "";
+        height: 26px;
+        left: 4px;
+        position: absolute;
+        -webkit-transition: .4s;
+        width: 26px;
+        transition: .4s; }
+    .container .subscription input:checked + .slider:before {
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+      -webkit-transform: translateX(26px); }
+    .container .subscription .slider.round {
+      border-radius: 34px;
+      /* round the white inside of slider */ }
+      .container .subscription .slider.round:before {
+        border-radius: 50%; }
+  .container .boxes {
+    background-color: white;
+    border-radius: .5rem;
+    display: flex;
+    font-size: 10px;
+    font-weight: 600;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2rem .1rem;
+    text-align: center; }
+    .container .boxes .button {
+      background: linear-gradient(to right, #a3a8f0, #696fdd);
+      border: none;
+      border-radius: .25rem;
+      color: white;
+      font-size: 8px;
+      font-weight: 600;
+      letter-spacing: .1rem;
+      padding: .5rem 4rem; }
+      .container .boxes .button:hover {
+        background: white;
+        color: #696fdd; }
+    .container .boxes .zoom {
+      background-color: white;
+      border-radius: .5rem;
+      height: 200px;
+      margin: 0 auto;
+      padding: 50px;
+      transition: transform .2s;
+      width: 200px; }
+      .container .boxes .zoom:hover {
+        background: linear-gradient(to bottom, #a3a8f0, #696fdd);
+        color: white;
+        transform: scale(1.1); }
+
+/*# sourceMappingURL=output.css.map */
